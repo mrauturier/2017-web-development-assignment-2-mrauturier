@@ -1,0 +1,43 @@
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.first {
+    width: 15%;
+}
+
+.column.second {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#histo {
+	border-style: solid;
+    border-width: medium;
+	height: 250px;
+	width: 300px;
+	font-family: "Comic Sans Ms";
+	list-style-type: none;
+
+}
+
+#map {
+	width: 80%;
+	height: 400px;
+	margin-left: 18.5%;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}

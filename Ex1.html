@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style1.css" />
+	<script src="JsBarcode.code128.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("#hideShow").click(function(){
+
+				if ($("#hideShow").val() == "Hide"){
+					$("#info").slideUp();
+					$("#hideShow").html("Show");
+					$("#hideShow").val("Show");
+				}
+				else{
+					$("#info").slideDown();
+					$("#hideShow").html("Hide");
+					$("#hideShow").val("Hide");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		Virtual bar code: 
+		<input type="text" id="inputCode" onclick="this.value ='';" onfocus="changeGrey()" onblur="changeWhite()"
+		value="enter the virtual code here"></input> 
+		<!-- 479440520200360820048831500000000868516259619897100612  -->
+	</header>
+	<div>
+		<button id="decode" onclick="decode()">Decode</button>
+		<button id="hideShow" value="Hide">Hide</button>
+	</div>
+	<div id="info">
+		<div class="textBox">Payee's IBAN: </div>
+		<div id="iban"></div>
+		<div class="textBox">Amount to be paid: </div>
+		<div id="amount"></div>
+		<div class="textBox">Payement reference: </div>
+		<div id="ref"></div>
+		<div class="textBox">Due date: </div>
+		<div id="date"></div>
+		<img id="barcode"></img>
+	</div>
+	<script src="Ex1.js" type="text/javascript"></script>
+</body>
+</html>

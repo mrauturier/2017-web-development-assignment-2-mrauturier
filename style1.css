@@ -1,0 +1,51 @@
+html{
+	font-family: "Comic Sans Ms"
+}
+
+#inputCode{
+
+	font-family: "Comic Sans Ms";
+	vertical-align: middle;
+	width: 430px;
+	height: 20px;
+}
+
+#info{
+	height: 300px;
+	width: 800px;
+    border-style: solid;
+    border-width: medium;
+    margin-top: 20px;
+}
+
+#hideShow{
+	margin-left: 200px
+}
+
+#decode{
+	margin-left: 100px
+}
+
+#iban,#amount,#ref,#date{
+	width: 200px;
+	height: 20px;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+div.textBox{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+#barcode{
+
+	height: 100px;
+	width: 500px;
+    border-style: solid;
+    border-width: medium;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+
