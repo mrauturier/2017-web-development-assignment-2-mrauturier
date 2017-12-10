@@ -3,7 +3,7 @@ function decode() {
 	var date;
 	var ref;
 
-	if (code.length!=54)
+	if (code.length!=54) //check if the code has the right size
 	{
 		console.log(code.length);
 		document.getElementById("inputCode").value = "error with the code, please enter a new one";

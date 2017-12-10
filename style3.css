@@ -25,6 +25,7 @@
 #row1 {
     margin-top: 10px;
     margin-left: 100px;
+    display: flex;
 }
 
 #row2 {
@@ -43,6 +44,18 @@ button {
     border-color: black;
 }
 
-#choixLine {
+#lineChoice {
     width: 50px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+#infoUser {
+    height: 20px;
+    width: 400px;
+    border-style: solid;
+    border-width: medium;
+    margin-left: 350px;
+    padding: 7px;
+    text-align: center;
 }

@@ -33,6 +33,16 @@
 	margin-left: 18.5%;
 }
 
+#infoUser {
+    height: 13px;
+    width: 400px;
+    border-style: solid;
+    border-width: medium;
+    margin-top: 50px;
+    padding: 7px;
+    text-align: center;
+}
+
 table
 {
     border-collapse: collapse;

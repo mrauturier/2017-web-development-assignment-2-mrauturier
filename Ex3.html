@@ -15,10 +15,13 @@
 	<header>
 		<div id="row1"> 
 			<label>Select the bus line: </label>
-			<input list="listLine" type="text" id="choixLine" onclick="this.value ='';"> 
+			<input list="listLine" type="text" id="lineChoice" onclick="this.value ='';" onfocusin="reset()"> 
 				<datalist id="listLine">
 				</datalist>
 				<br>
+			<div id="infoUser">
+				
+			</div>
 		</div>
 		<div id="row2">
 			<button id="showB" onclick="showBuses()">Show buses</button>
