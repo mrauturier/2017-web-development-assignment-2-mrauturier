@@ -31,7 +31,7 @@ function search () {
 			var tab = "<tr><th>Place Name</th><th>Longitude</th><th>Latitude</th></tr>"
 			for (var i = 0; i<villes.length; i++){
 				tab += "<tr><td>" + villes[i]["place name"] + "</td><td>" + villes[i].longitude + "</td><td>" + villes[i].latitude + "</td></tr>";
-				addMarker(villes[i].longitude, villes[i].latitude);
+				addMarker(villes[i].latitude, villes[i].longitude);
 			}
 			document.getElementById("places").innerHTML = tab;
 		};
@@ -40,7 +40,7 @@ function search () {
 
 }
 
-function addMarker(lon, lat) {
+function addMarker(lat, lon) {
 	var myCenter = new google.maps.LatLng(lat, lon);
 	var marker = new google.maps.Marker({position:myCenter});
 	marker.setMap(map);

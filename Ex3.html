@@ -3,21 +3,27 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style3.css" />
-	<script src="Ex2.js" type="text/javascript"></script>
+	<script src="Ex3.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			createList();
+		});
+	</script>
 </head>
 <body>
-<header>
-	<div id="row1"> Select the bus line: 
-		<select>
-			
-		</select>
-		<br>
-	</div>
-	<div id="row2">
-		<button id="showB">Show buses</button>
-		<button id="refresh">Refresh</button>
-		<button id="showR">Show route</button>
+	<header>
+		<div id="row1"> 
+			<label>Select the bus line: </label>
+			<input list="listLine" type="text" id="choixLine" onclick="this.value ='';"> 
+				<datalist id="listLine">
+				</datalist>
+				<br>
+		</div>
+		<div id="row2">
+			<button id="showB" onclick="showBuses()">Show buses</button>
+		<button id="refresh" onclick="showBuses()">Refresh</button>
+		<button id="showR" onclick="drawRoute()">Show route</button>
 	</div>
 </header>
 	<div id="map"></div>
