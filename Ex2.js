@@ -21,7 +21,7 @@ function search () {
 	var villes;
 
 	//sending a request for a zip code and a country
-	client.open("GET", "http://api.zippopotam.us/"+country+"/"+zipCode, true);
+	client.open("GET", "https://api.zippopotam.us/"+country+"/"+zipCode, true);
 	client.onreadystatechange = function() {
 
 		if(client.readyState == 4 && client.statusText == "OK") { //if there is a match
